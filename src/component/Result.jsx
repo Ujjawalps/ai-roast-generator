@@ -5,7 +5,7 @@ import Lottie from "lottie-react";
 import avatarAnimation from "../assets/avatar.json";
 import '../App.css';
 import { motion } from "framer-motion";
-const COHERE_API_KEY=import.meta.env.VITE_API_KEY;
+// const COHERE_API_KEY=import.meta.env.VITE_API_KEY;
 
 
 
@@ -31,7 +31,7 @@ export default function Result() {
           setRoast(roast);
           
           setLoading(false);
-          console.log(COHERE_API_KEY)
+          // console.log(COHERE_API_KEY)
           console.log("Roast:", roast); // Log roast for debugging
           new Audio("/burn.wav").play();
           setTimeout(() => {
