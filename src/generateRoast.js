@@ -1,4 +1,4 @@
-const COHERE_API_KEY = "FF1Wpg7J0D7LYjDsMxgYAe3c0VDf6PV0ENnz6bi2"; // Put in .env for prod!
+const COHERE_API_KEY = import.meta.env.VITE_API_KEY;
 
 export const generateRoast = async (formData) => {
   const prompt = `Roast this person based on the following:
